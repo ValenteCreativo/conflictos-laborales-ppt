@@ -116,8 +116,8 @@
     #slide-8 .proposal-item::before { content: '—'; color: #b97843; }
     .logos-purpose { display: flex; align-items: center; gap: 22px; margin-top: 30px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.18); max-width: 560px; }
     .logos-purpose span { font-size: 10px; text-transform: uppercase; letter-spacing: 1.8px; color: #9d9d9d; max-width: 130px; line-height: 1.4; }
-    .logos-purpose img { width: 72px; height: 50px; padding: 7px 9px; object-fit: contain; filter: none; mix-blend-mode: normal; background: rgba(245,243,238,.94); border: 1px solid rgba(255,255,255,.2); border-radius: 2px; }
-    .logos-purpose img.tall { height: 58px; }
+    .logos-purpose img { width: 82px; height: 56px; padding: 7px 9px; object-fit: contain; filter: none; mix-blend-mode: normal; background: rgba(245,243,238,.94); border: 1px solid rgba(255,255,255,.2); border-radius: 2px; }
+    .logos-purpose img.tall { height: 64px; }
     .step-control { position: fixed; right: 60px; bottom: 38px; z-index: 30; display: flex; align-items: center; gap: 16px; pointer-events: auto; }
     .step-control button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.5); background: rgba(0,0,0,.22); color: #fff; font-size: 19px; line-height: 1; transition: background .25s, border-color .25s, transform .25s; }
     .step-control button:hover { background: #fff; color: #000; border-color: #fff; transform: scale(1.08); }
@@ -151,12 +151,14 @@
     #slide-3 { width: min(1040px, calc(50vw - 80px)); }
     #slide-3 .slide-title { font-size: clamp(48px, 5vw, 64px); margin-bottom: 24px; }
     .ab-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; max-width: 980px; }
+    .ab-bridge { grid-column: 1 / -1; justify-self: center; margin-top: -34px; padding: 7px 18px; border: 1px solid rgba(185,120,67,.52); color: #c99568; text-transform: uppercase; letter-spacing: 2px; font-size: 10px; text-align: center; background: rgba(8,6,5,.55); }
+    .ab-bridge small { display: block; margin-top: 3px; color: #a8a8a8; font-size: 8px; letter-spacing: 1.2px; }
     .ab-column { border-top: 1px solid rgba(255,255,255,.28); padding-top: 14px; }
     .ab-kicker { color: #b97843; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
     .ab-column p { color: #d1d5db; font-size: 15px; line-height: 1.55; text-align: left; margin: 0; }
     .ab-logos { display: flex; align-items: center; gap: 12px; margin-top: 22px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.14); }
-    .ab-logos img { width: 68px; height: 48px; padding: 7px 9px; object-fit: contain; filter: none; mix-blend-mode: normal; background: rgba(245,243,238,.94); border: 1px solid rgba(255,255,255,.2); border-radius: 2px; }
-    .ab-logos img.tall { height: 54px; }
+    .ab-logos img { width: 80px; height: 56px; padding: 7px 9px; object-fit: contain; filter: none; mix-blend-mode: normal; background: rgba(245,243,238,.94); border: 1px solid rgba(255,255,255,.2); border-radius: 2px; }
+    .ab-logos img.tall { height: 62px; }
     #slide-4 .slide-title, #slide-6 .slide-title { white-space: normal; }
     #slide-4 .slide-title, #slide-5 .slide-title, #slide-6 .slide-title, #slide-7 .slide-title, #slide-8 .slide-title { font-size: clamp(48px, 5vw, 66px); max-width: 700px; }
     .problem-statement { font-size: clamp(22px, 2.6vw, 34px); line-height: 1.32; max-width: 720px; color: #fff6ed; }
@@ -186,8 +188,9 @@
       .ab-kicker { font-size: 10px; letter-spacing: 1.5px; }
       .ab-column p { font-size: 12px; line-height: 1.45; }
       .ab-logos { gap: 6px; margin-top: 16px; padding-top: 10px; }
-      .ab-logos img { width: 48px; height: 34px; padding: 4px 6px; }
-      .ab-logos img.tall { height: 39px; }
+      .ab-logos img { width: 50px; height: 36px; padding: 4px 6px; }
+      .ab-logos img.tall { height: 41px; }
+      .ab-bridge { margin-top: -8px; font-size: 9px; padding: 5px 12px; }
       #slide-1 .desc-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; max-width: calc(100vw - 48px); }
       #slide-1 .col-1, #slide-1 .col-2 { width: auto; max-width: none; }
       #slide-7 { width: calc(100vw - 48px); }
@@ -226,7 +229,7 @@
       <h2 class="slide-title">Conflictos <br>Laborales</h2>
       <div class="desc-row">
         <p class="slide-desc col-1">Derecho laboral en México.<br>Una lectura breve sobre las autoridades que atienden los conflictos laborales.</p>
-        <p class="slide-desc col-2">Una propuesta para ordenar la competencia y dar certeza a sus resoluciones.</p>
+        <p class="slide-desc col-2">Una propuesta para que los conflictos laborales sean atendidos por una autoridad jurisdiccional.</p>
       </div>
     </div>
     <div class="slide" id="slide-2">
@@ -248,6 +251,7 @@
           <p>Relaciones entre el Gobierno y sus trabajadores.<br><br>Tribunal Federal de<br>Conciliación y Arbitraje.</p>
           <div class="ab-logos"><img src="./assets/logos/img-007.png" alt="ISSSTE"><img class="tall" src="./assets/logos/img-006.png" alt="FOVISSSTE"></div>
         </div>
+        <div class="ab-bridge">AFORE<small>Aplica en ambos apartados</small></div>
       </div>
     </div>
     <div class="slide" id="slide-4">
